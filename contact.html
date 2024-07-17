@@ -9,9 +9,7 @@
       name="keywords"
       content="JavaScript, HTML, CSS, Python, Java, SQL web development, full stack, software engineer"
     />
-
-    <title>Elzara Turakulova | About me</title>
-
+    <title>Contact me</title>
     <nav>
       <a href="index.html">About</a>
       <a href="projects.html">Projects</a>
@@ -19,30 +17,27 @@
     </nav>
   </head>
   <body>
-    <h1>Elzara Turakulova</h1>
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        International trade and project management professional transitioning
-        into software engineering. Skilled in Java, Python, and SQL, with
-        ongoing learning in JavaScript and web development. Dedicated to
-        continuous learning, writing quality code, and fostering inclusive work
-        environments.
-      </p>
-    </section>
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          Transportation Logistics Manager, Nobilis Trans Systems, Tashkent,
-          Uzbekistan
-        </li>
-        <li>Project Manager, DSG-Print LLC, Tashkent, Uzbekistan</li>
-        <li>
-          Global Trade Specialist/General Director Assistant, MAORIF PLUS LLC,
-          Tashkent, Uzbekistan
-        </li>
-      </ul>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="/handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+      </form>
     </section>
     <section id="connect">
       <h2>Connect</h2>
