@@ -2,101 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Elzara Turakulova" />
-    <meta name="description" content="Contact page" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="author"
+      content="Elzara Turakulova"
+    />
+    <meta
+      name="description"
+      content="Contact page"
+    />
     <meta
       name="keywords"
       content="JavaScript, HTML, CSS, Python, Java, SQL web development, full stack, software engineer"
     />
     <title>Contact me</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/index.css"
+    />
     <link
       rel="stylesheet"
       type="text/css"
       href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Montserrat:400,700"
     />
+    <script
+      src="js/common.js"
+      defer
+    ></script>
   </head>
   <body>
     <header>
       <nav>
-        <a class="index" href="index.html">Elzara Turakulova</a>
+        <a
+          class="index"
+          href="index.html"
+          >Elzara Turakulova</a
+        >
         <a href="index.html#experience">Experience</a>
         <a href="index.html#skills">Skills</a>
-        <a class="projects" href="projects.html">Projects</a>
-        <a class="contact-me" href="contact.html">Contact me</a>
+        <a
+          class="projects"
+          href="projects.html"
+          >Projects</a
+        >
+        <a
+          class="contact-me"
+          href="contact.html"
+          >Contact me</a
+        >
       </nav>
     </header>
     <div class="container">
       <main>
-        <section id="contact">
+        <div class="contact-and-messages-container">
+          <section id="contact">
+            <h2>Leave a Message</h2>
+            <form name="leave_message">
+              <label for="usersName">Name:</label>
+              <input
+                type="text"
+                name="usersName"
+                id="usersName"
+                required="true"
+              />
+              <br />
+              <label for="usersEmail">Email:</label>
+              <input
+                type="email"
+                name="usersEmail"
+                id="usersEmail"
+                required="true"
+              />
+              <br />
+              <label for="msg">Message:</label>
+              <textarea
+                name="usersMessage"
+                id="msg"
+                required="true"
+              ></textarea>
+              <button
+                type="submit"
+                id="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </section>
+
+          <section id="messages">
+            <h2>Messages</h2>
+            <ul></ul>
+          </section>
+        </div>
+        <!-- <section id="contact">
           <h2>Contact Me</h2>
-          <form action="/handling-form-page" method="post">
+          <form
+            action="/handling-form-page"
+            method="post"
+          >
             <ul>
               <li>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                />
               </li>
               <li>
                 <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" />
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                />
               </li>
               <li>
                 <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
+                <textarea
+                  id="msg"
+                  name="user_message"
+                ></textarea>
               </li>
               <li class="button">
                 <button type="submit">Send your message</button>
               </li>
             </ul>
           </form>
-        </section>
+        </section> -->
       </main>
     </div>
-    <footer>
-      <div class="footer-content">
-        <div class="copyright">© 2024 Elzara Turakulova</div>
-        <div class="connect">
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/ielzara" target="_blank">
-                <img
-                  src="images/instagram-icon.png"
-                  alt="Instagram"
-                  class="social-icon"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="mailto:endjik@gmail.com">
-                <img
-                  src="images/gmail-icon.png"
-                  alt="Email"
-                  class="social-icon"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/ielzara" target="_blank">
-                <img
-                  src="images/github-icon.svg"
-                  alt="GitHub"
-                  class="social-icon"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/elzara" target="_blank">
-                <img
-                  src="images/linkedin-icon.png"
-                  alt="LinkedIn"
-                  class="social-icon"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <script
+      src="js/contact.js"
+      defer
+    ></script>
   </body>
 </html>
