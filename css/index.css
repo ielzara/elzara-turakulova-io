@@ -102,6 +102,10 @@ h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.section:last-child {
+  margin-bottom: 0;
+}
+
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -217,6 +221,14 @@ footer {
   width: 24px;
   height: 24px;
 }
+/* Contact form */
+.contact-and-messages-container {
+  display: grid;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 #contact {
   margin-top: 1.5em auto;
@@ -239,8 +251,8 @@ footer {
   margin-bottom: 10px;
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
+#contact input[type="text"], 
+#contact input[type="email"], 
 #contact textarea {
   width: 100%;
   padding: 8px;
@@ -269,8 +281,69 @@ footer {
 #contact button:hover {
   background-color: #2980b9;
 }
-.section:last-child {
-  margin-bottom: 0;
+
+/* Messages section */
+#messages {
+  margin: 1.5em auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+#messages h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+#messages ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#messages li {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+#messages li a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: bold;
+}
+#messages li a:hover {
+  color:#3498db
+}
+
+#messages li span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#messages button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+#messages button:hover {
+  background-color: #2980b9;
+}
+
+#messages .remove-button {
+  background-color: #e74c3c;
+}
+
+#messages .remove-button:hover {
+  background-color: #c0392b;
 }
 
 /* Mobile media queries */
@@ -283,7 +356,7 @@ footer {
   header {
     margin: 0;
     padding: 0.5em 0;
-    height: 3em;
+    height: 4em;
     align-items: center;
   }
 
@@ -291,7 +364,7 @@ footer {
     flex-direction: row;
     align-items: space-between;
     padding: 0.5em 1em;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   nav a {
@@ -319,5 +392,3 @@ footer {
     justify-content: center;
   }
 }
-
-/* Pushed changes to lesson-11 instead of lesson-12 hence no changes in the code */
