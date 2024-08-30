@@ -77,3 +77,4 @@ function createFooter() {
     footerList.appendChild(footerItem);
   });
 }
+
