@@ -1,5 +1,5 @@
 # elzara-turakulova-io
-Intro to Programming course
+Personal portfolio website
 
 Open API Project link: https://github.com/ielzara/elzara-turakulova-open-api
 
